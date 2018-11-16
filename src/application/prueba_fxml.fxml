@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.ParallelCamera?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
+   <children>
+      <Group>
+         <children>
+            <ImageView fx:id="ftPeppa" fitHeight="300.0" fitWidth="400.0" preserveRatio="true">
+               <image>
+                  <Image url="@peppa.jpg" />
+               </image>
+            </ImageView>
+            <Button cancelButton="true" layoutX="112.0" layoutY="255.0" mnemonicParsing="false" onAction="#handleClose" styleClass="myButton" text="Close">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Text layoutX="13.0" layoutY="55.4765625" strokeType="OUTSIDE" strokeWidth="0.0" text="PEPPA PIG" wrappingWidth="161.99999856948853">
+               <font>
+                  <Font name="Harrington" size="27.0" />
+               </font>
+            </Text>
+            <ParallelCamera layoutX="6.0" layoutY="210.0" />
+            <Button layoutX="21.0" layoutY="255.0" mnemonicParsing="false" onAction="#setblur" styleClass="myButton" text="Efecto Blur">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

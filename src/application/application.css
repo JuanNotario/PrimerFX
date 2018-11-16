@@ -1,0 +1,15 @@
+.myButton{
+	-fx-background-color: orange;
+	-fx-border-color: orange;
+	-fx-text-fill: white;
+}
+
+.myButton:hover {
+	-fx-background-color: blue;
+	-fx-border-color: blue;
+}
+
+.button:pressed {
+  -fx-background-color: red;
+  -fx-text-fill: white;
+  }
